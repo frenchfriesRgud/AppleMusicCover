@@ -1,9 +1,32 @@
+/* css by @frenchfriesRgud 
+
+*/
+:root {
+    --ui-transition:all 0.5s;
+}
 html, body {
-    font-family: 'SanFranciscoText-Regular', Helvetica, Arial, sans-serif
+    font-family: 'SanFranciscoText-Regular', Helvetica, Arial, sans-serif;
+    height: auto;
 }
 html, body, h1, h2, h3, h4 {
     padding: 0;
     margin: 0
+}
+html {
+    background: #f7f7f7;
+}
+body {
+    max-width: 600px;
+    min-height:100%;
+    margin: auto;
+    background: White;
+    box-shadow: 0px 0px 50px #e6e6e6;
+}
+h1 {
+    font-family: 'SanFranciscoDisplay-Heavy', Helvetica, Arial, sans-serif;
+}
+h2, h3, h4, h5, h6 {
+    font-family: 'SanFranciscoDisplay-Regular', Helvetica, Arial, sans-serif;
 }
 /* top header */
 .header {
@@ -14,6 +37,9 @@ html, body, h1, h2, h3, h4 {
 .header .action {
     color: #E01F3D;
     font-size: 1.2em;
+}
+.action:hover {
+    cursor:pointer;
 }
 .focus {
     font-weight:bold;
@@ -196,6 +222,9 @@ input:checked + .slider:before {
     padding-bottom:5px;
     margin:0 3px;
     font-size:1.3em;
+    display:flex;
+    align-items:center;
+    touch-action: manipulation;
 }
 .options ul .option:hover {
     cursor:pointer;
@@ -204,5 +233,101 @@ input:checked + .slider:before {
     background:white;
     box-shadow:0px 0px 5px rgb(160, 160, 160);
 }
+/* foregrounds */
+.foreground-group {
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.foreground-group ul {
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    min-height: 220px;
+    padding: 0px;
+    margin: 0px;
+}
+.foreground-group ul li {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    background-size:cover;
+    border:4px solid transparent;
+    background-clip: padding-box;
+    transition: var(--ui-transition);
+}
+.foreground-option:hover {
+    cursor: pointer;
+    border:4px solid rgb(238, 238, 238);
+}
+.foreground-option:active {
+    transform: scale(1.1);
 
+}
+.foreground-active {
+    border:4px solid white!important;
+    box-shadow:0px 0px 5px rgb(160, 160, 160);
+}
+/* end foregrounds */
 /* end controls */
+
+/* footer */
+footer {
+    margin-top:50px;
+    text-align:center;
+    padding:20px;
+}
+footer:hover {
+    cursor: pointer;
+}
+.credit, #created-date {
+    opacity:0.5;
+    font-size: 0.8em;
+}
+.credit-link {
+    text-decoration: none;
+    color: inherit;
+}
+/* end footer */
+
+/* credits page */
+
+section#credit {
+    padding:50px;
+}
+section#credit .handle {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 auto;
+}
+section#credit .author-avi {
+    font-size:3em;
+}
+section#credit h1 {
+    margin-top:50px;
+}
+.meta {
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+}
+#version {
+    padding-bottom:10px;
+}
+/* hidden */
+.hide {
+    display:none;
+}
+.disappear {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    visibility: hidden;
+}

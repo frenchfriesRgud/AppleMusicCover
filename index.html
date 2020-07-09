@@ -31,44 +31,47 @@
         <!-- Anthony's includes -->
         <link rel="shortcut icon" type="image/x-icon" href="https://anthony.media/favicon.ico">
         <link href="https://anthony.media/assets/global/fonts/SanFrancisco/SanFrancisco.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://anthony.media/css/global/animate.css" type="text/css" media="all">
-        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/mobile.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/foregrounds.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     </head>
     <body>
         <div class="header">
-            <div id="top-left-btn" class="action">Cancel</div>
+            <div id="top-left-btn" class="action disappear">Cancel</div>
             <div id="top-mid-btn">
                 <h3>Create Playlist Cover</h3></div>
             <div id="top-right-btn" class="action focus">Save</div>
         </div>
-        <div class="app">
             <div class="viewport">
-                <div class="artwork">
+                <div class="artwork gradient-002">
                     <div class="spacer">
-                        <div class="name">@yourName</div>
-                        <div class="title"><h2>Name list<h2></div>
+                        <div id="playlist-name" class="name">@you</div>
+                        <div class="title"><h2 id="playlist-title" >Playlist<h2></div>
                     </div>
                 </div>
             </div>
+        <div class="app">
             <div class="controls">
                 <div class="info">
                     <div class="field-group">
-                        <input class="input-field input-playlist" name="playlist" value="Name list" placeholder="playlist">
+                        <input id="input-title" class="input-field input-playlist" name="playlist" value="" placeholder="Name playlist">
                     </div>
                     <hr>
                     <div class="toggle-group">
                         <h3>Use my name</h3>
                         <span class="settings-toggle-container">
                             <label class="switch">
-                                <input type="checkbox" id="avatar-float-radio">
+                                <input type="checkbox" id="use-name-radio" checked>
                                 <span class="slider round"></span>
                             </label>
                         </span>
                     </div>
                     <div class="field-group">
                         <span id="name-at">
-                            <input class="input-field input-name" name="playlist" value="yourname" placeholder="@you">
+                            <input id="input-name" class="input-field input-name" name="name" value="" placeholder="you">
                         </span>
                     </div>
                     <div class="option-group">
@@ -97,16 +100,73 @@
                         </div>
                     </div>
                     <div class="option-group foreground-choices">
-                        <div class="foreground-gradients">
-                            <ul>
-                                <li>x</li>
-                                
+                        <div class="foreground-group foreground-gradients">
+                            <ul class="foreground-col">
+                                <li class="foreground-option gradient-001 foreground-active"></li>
+                                <li class="foreground-option gradient-002"></li>
+                                <li class="foreground-option gradient-003"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option gradient-004"></li>
+                                <li class="foreground-option gradient-005"></li>
+                                <li class="foreground-option gradient-006"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option gradient-007"></li>
+                                <li class="foreground-option gradient-008"></li>
+                                <li class="foreground-option gradient-009"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option gradient-010"></li>
+                                <li class="foreground-option gradient-011"></li>
+                                <li class="foreground-option gradient-012"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option gradient-013"></li>
+                                <li class="foreground-option gradient-014"></li>
+                                <li class="foreground-option gradient-015"></li>
                             </ul>
                         </div>
                     </div>
+                    <hr>
+                    <div class="toggle-group">
+                        <h3>Advanced Settings</h3>
+                        <span class="settings-toggle-container">
+                            <label class="switch">
+                                <input type="checkbox" id="use-name-radio" disabled>
+                                <span class="slider round"></span>
+                            </label>
+                        </span>
+                    </div>
                 </div>
             </div>
+            <footer id="toggleCredit">
+                <p class="author">code by @frenchfriesRgud</p>
+                <p class="credit">concept by 0neGuy,  UI by hiddecollee</p>
+                <p class="credit">&amp more</p>
+            </footer>
         </div>
-        <script src="script.js"></script>
+        <section id="credit" class="hide">
+            <div class="handle">
+                <span class="author-avi">&#127839;</span>
+                <span class="frenchfriesRgud">@frenchfriesRgud</span>
+                <div class="meta">
+                    <span id="version">Version 1.0</span>
+                    <span id="created-date">Created July 8th, 2020</span>
+                </div>
+            </div>
+            <h1>Concept</h1>
+            <p>Credit to 0neguy for the original idea.</p>
+            <p>Credit to hiddecollee for ui design.</p>
+            <h1>Elements</h1>
+            <p>uigradients.com for the gradients.</p>
+            <p>animate.style for the animations.</p>
+            <p><a class="credit-link" href="https://www.w3schools.com/howto/howto_css_switch.asp" target="_blank">w3schools.com</a> for the toggle switch.</p>
+            <h1>Copyright</h1>
+            <p>Apple Music © Apple Inc.</p>
+            <p>San Francisco Font © Apple Inc.</p>
+        </section>
+        
+        <script src="/lib/js/playlistCover.js"></script>
     </body>
 </html>

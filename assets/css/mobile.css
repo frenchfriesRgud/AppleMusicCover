@@ -1,0 +1,13 @@
+@media (max-width:800px) {
+    .app {
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .options ul .option {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    section#credit {
+        padding:10px;
+    }
+}

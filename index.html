@@ -1,28 +1,53 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- Epstein didn't kill himself 
-        
-        Add me on xbox @frenchfriesRgud
-        -->
+        <!-- made by @frenchfriesRgud -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Apple Music Cover Generator</title>
-        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Playlist Cover</title>
         <!-- Search engine-->
         <meta name="robots" content="noindex">
         <meta name="AdsBot-Google" content="noindex">
         <meta name="googlebot" content="noindex">
         <meta name="googlebot-news" content="noindex">
         <!-- end Search engine-->
+        <!-- Apple Progressive Web Application Meta -->     
+        <!-- Launch Images for iOS devices -->
+        <!-- iPhone Xs Max (1242px x 2688px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)" href="/assets/app/splash/apple-launch-1242x2688.png"> 
+        <!-- iPhone Xr (828px x 1792px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-828x1792.png"> 
+        <!-- iPhone X, Xs (1125px x 2436px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)" href="/assets/app/splash/apple-launch-1125x2436.png"> 
+        <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)" href="/assets/app/splash/apple-launch-1242x2208.png"> 
+        <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-750x1334.png">  
+        <!-- iPad Pro 12.9" (2048px x 2732px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-2048x2732.png"> 
+        <!-- iPad Pro 11” (1668px x 2388px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-1668x2388.png"> 
+        <!-- iPad Pro 10.5" (1668px x 2224px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-1668x2224.png"> 
+        <!-- iPad Mini, Air (1536px x 2048px) --> 
+        <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)" href="/assets/app/splash/apple-launch-1536x2048.png">
+        <!-- Enable web app -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=0"/>
+        <!-- App Title -->
+        <meta name="apple-mobile-web-app-title" content="Playlist Cover">
+        <!-- Style Status Bar -->
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!-- End Apple Progressive Web Application Meta -->
+        <!-- Chrome PWA -->
+        <meta name="mobile-web-app-capable" content="yes">  
         <!-- Social Media -->
-        <meta name="description" content="Playlist cover generator in Apple Music Style">
+        <meta name="description" content="Create Music Playlist Artworks">
         <meta property="og:locale" content="en_US">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Apple Music Cover Generator">
-        <meta property="og:description" content="Playlist cover generator in Apple Music Style">
-        <meta property="og:url" content="https://anthonys.app/">
-        <meta property="og:site_name" content="Apple Music Cover Generator">
+        <meta property="og:title" content="Playlist Cover">
+        <meta property="og:description" content="Create Music Playlist Artworks">
+        <meta property="og:url" content="https://anthony.media/">
+        <meta property="og:site_name" content="Playlist Cover">
         <!-- <meta property="og:image" content="https://i.imgur.com/Hl0fNax.jpg">
         <meta property="og:image:secure_url" content="https://i.imgur.com/Hl0fNax.jpg"> 
         <meta property="og:image:width" content="1280">
@@ -32,34 +57,48 @@
         <link rel="shortcut icon" type="image/x-icon" href="https://anthony.media/favicon.ico">
         <link href="https://anthony.media/assets/global/fonts/SanFrancisco/SanFrancisco.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://anthony.media/css/global/animate.css" type="text/css" media="all">
+        <link href="https://anthony.media/css/global/animate.css" type="text/css" media="all" rel="stylesheet" >
         <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/mobile.css" rel="stylesheet" type="text/css" />
         <link href="/assets/css/foregrounds.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- Icon -->
+        <link rel="apple-touch-icon" href="/assets/app/ios_icon_192.png">
+        <!-- App manifest -->
+        <link rel="manifest" href="/manifest.json">
     </head>
-    <body>
+    <body class="animate__animated animate__fadeIn animate__delay-1s">
         <div class="header">
-            <div id="top-left-btn" class="action disappear">Cancel</div>
+            <div id="top-left-btn" class="action disappear">Back</div>
             <div id="top-mid-btn">
-                <h3>Create Playlist Cover</h3></div>
-            <div id="top-right-btn" class="action focus">Save</div>
+                <h3>Playlist Cover</h3></div>
+            <div id="top-right-btn" class="action focus">Create</div>
         </div>
             <div class="viewport">
-                <div class="artwork gradient-002">
-                    <div class="spacer">
-                        <div id="playlist-name" class="name">@you</div>
-                        <div class="title"><h2 id="playlist-title" >Playlist<h2></div>
+                <div id="artwork" class="artwork image-002">
+                    <div class="filter">
+                        <div id="spacer" class="spacer">
+                            <div id="playlist-name" class="name"><span class="at-sign">@</span>author</div>
+                            <div class="title"><h2 id="playlist-title" >Lo-fi beats<h2></div>
+                        </div>
                     </div>
                 </div>
             </div>
+        <div class="create-info hide animate__animated animate__fadeIn animate__delay-1s">
+            <h3 class="screenshot-message">Take a screenshot and crop to save &#128241;</h3>
+            <hr class="divider">
+            <div class="toggle-group slider-group">
+                <h3>Adjust font size:</h3>
+                <input class="input-slider" type="range" min="1" max="100" value="50">
+            </div>
+        </div>
         <div class="app">
             <div class="controls">
                 <div class="info">
                     <div class="field-group">
-                        <input id="input-title" class="input-field input-playlist" name="playlist" value="" placeholder="Name playlist">
+                        <input id="input-title" class="input-field input-playlist" name="playlist" value="" placeholder="Title" autocomplete="off" spellcheck="false">
                     </div>
-                    <hr>
+                    <hr class="divider">
                     <div class="toggle-group">
                         <h3>Use my name</h3>
                         <span class="settings-toggle-container">
@@ -71,38 +110,43 @@
                     </div>
                     <div class="field-group">
                         <span id="name-at">
-                            <input id="input-name" class="input-field input-name" name="name" value="" placeholder="you">
+                            <input id="input-name" class="input-field input-name" name="name" value="" placeholder="Author" autocomplete="off" spellcheck="false">
                         </span>
                     </div>
+                </div>
+                <div class="alignment">
                     <div class="option-group">
                         <div class="options text-align">
                             <ul class="options-text-align">
-                                <li class="option active"><i class="ri-align-left"></i></li>
-                                <li class="option"><i class="ri-align-center"></i></li>
-                                <li class="option"><i class="ri-align-right"></i></li>
+                                <li class="option active" data-action-parent="spacer" data-action-target="text-align" data-action-value="left"><i class="ri-align-left"></i></li>
+                                <li class="option" data-action-parent="spacer" data-action-target="text-align" data-action-value="center"><i class="ri-align-center"></i></li>
+                                <li class="option" data-action-parent="spacer" data-action-target="text-align" data-action-value="right"><i class="ri-align-right"></i></li>
                             </ul>
                         </div>
                         <div class="options vertical-align">
-                            <ul class="options-text-align">
-                                <li class="option active"><i class="ri-layout-top-2-line"></i></li>
-                                <li class="option"><i class="ri-layout-bottom-2-line"></i></li>
+                            <ul class="options-align-self">
+                                <li class="option active" data-action-parent="spacer" data-action-target="align-self" data-action-value="flex-start"><i class="ri-layout-top-2-line"></i></li>
+                                <li class="option" data-action-parent="spacer" data-action-target="align-self" data-action-value="flex-end"><i class="ri-layout-bottom-2-line"></i></li>
                             </ul>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="divider">
+                </div>
+                <div class="palette">
                     <div class="option-group option-group-full">
                         <div class="options foreground">
                             <ul class="options-foreground">
-                                <li class="option active">Gradient</li>
-                                <li class="option">Color</li>
-                                <li class="option">Image</li>
+                                <li id="optionForegroundGradient" class="option active" data-action-value="gradient">Gradient</li>
+                                <li id="optionForegroundColor" class="option" data-action-value="color">Color</li>
+                                <li id="optionForegroundImage" class="option" data-action-value="image">Image</li>
                             </ul>
                         </div>
                     </div>
                     <div class="option-group foreground-choices">
-                        <div class="foreground-group foreground-gradients">
+                        <!-- Gradients -->
+                        <div class="foreground-group foreground-gradient animate__animated animate__fadeIn">
                             <ul class="foreground-col">
-                                <li class="foreground-option gradient-001 foreground-active"></li>
+                                <li id="test" class="foreground-option gradient-001 foreground-active"></li>
                                 <li class="foreground-option gradient-002"></li>
                                 <li class="foreground-option gradient-003"></li>
                             </ul>
@@ -127,44 +171,169 @@
                                 <li class="foreground-option gradient-015"></li>
                             </ul>
                         </div>
+                        <!-- Colors -->
+                        <div class="foreground-group foreground-color hide  animate__animated animate__fadeIn">
+                            <ul class="foreground-col">
+                                <li class="foreground-option color-001"></li>
+                                <li class="foreground-option color-002"></li>
+                                <li class="foreground-option color-003"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option color-004"></li>
+                                <li class="foreground-option color-005"></li>
+                                <li class="foreground-option color-006"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option color-007"></li>
+                                <li class="foreground-option color-008"></li>
+                                <li class="foreground-option color-009"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option color-010"></li>
+                                <li class="foreground-option color-011"></li>
+                                <li class="foreground-option color-012"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option color-013"></li>
+                                <li class="foreground-option color-014"></li>
+                                <li class="foreground-option color-015"></li>
+                            </ul>
+                        </div>
+                        <!-- Images -->
+                        <div class="foreground-group foreground-image hide  animate__animated animate__fadeIn">
+                            <ul class="foreground-col">
+                                <li class="foreground-option image-001"></li>
+                                <li class="foreground-option image-002"></li>
+                                <li class="foreground-option image-003"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option image-004"></li>
+                                <li class="foreground-option image-005"></li>
+                                <li class="foreground-option image-006"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option image-007"></li>
+                                <li class="foreground-option image-008"></li>
+                                <li class="foreground-option image-009"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option image-010"></li>
+                                <li class="foreground-option image-011"></li>
+                                <li class="foreground-option image-012"></li>
+                            </ul>
+                            <ul class="foreground-col">
+                                <li class="foreground-option image-013"></li>
+                                <li class="foreground-option image-014"></li>
+                                <li class="foreground-option image-015"></li>
+                            </ul>
+                        </div>
                     </div>
-                    <hr>
+                    <hr class="divider">
+                </div>
+                <div class="settings-panel">
                     <div class="toggle-group">
-                        <h3>Advanced Settings</h3>
+                        <h3 id="settings-label" class="nofocus">Advanced Settings</h3>
                         <span class="settings-toggle-container">
                             <label class="switch">
-                                <input type="checkbox" id="use-name-radio" disabled>
+                                <input type="checkbox" id="use-settings-radio">
                                 <span class="slider round"></span>
                             </label>
                         </span>
                     </div>
+                    <div id="settings" class="advanced-settings hide animate__animated animate__fadeIn">
+                        <div id="settings-toggle-at-sign" class="toggle-group">
+                            <h3 id="at-sign-label" class="nofocus"><s>Hide @ in name</s></h3>
+                            <span class="settings-toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="use-at-sign-radio" disabled>
+                                    <span class="slider round"></span>
+                                </label>
+                            </span>
+                        </div>
+                        <div id="settings-toggle-text-shadow" class="toggle-group">
+                            <h3 id="text-shadow-label" class="nofocus">Text Shadow</h3>
+                            <span class="settings-toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="use-text-shadow-radio">
+                                    <span class="slider round"></span>
+                                </label>
+                            </span>
+                        </div>
+                        <div id="settings-toggle-blur-background" class="toggle-group">
+                            <h3 id="blur-label" class="nofocus">Blur Background</h3>
+                            <span class="settings-toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="use-blur-radio">
+                                    <span class="slider round"></span>
+                                </label>
+                            </span>
+                        </div>
+                        <div id="settings-toggle-inner-shadow" class="toggle-group">
+                            <h3 id="inset-shadow-label" class="nofocus">Inner Shadow</h3>
+                            <span class="settings-toggle-container">
+                                <label class="switch">
+                                    <input type="checkbox" id="use-inset-shadow-radio">
+                                    <span class="slider round"></span>
+                                </label>
+                            </span>
+                        </div>
+                    </div>
+                </div>
                 </div>
             </div>
             <footer id="toggleCredit">
                 <p class="author">code by @frenchfriesRgud</p>
                 <p class="credit">concept by 0neGuy,  UI by hiddecollee</p>
-                <p class="credit">&amp more</p>
             </footer>
         </div>
         <section id="credit" class="hide">
-            <div class="handle">
-                <span class="author-avi">&#127839;</span>
-                <span class="frenchfriesRgud">@frenchfriesRgud</span>
+            <div class="handle animate__animated animate__fadeIn">
+                
                 <div class="meta">
+                    <img src="/assets/app/ios_icon_192.png" class="app-logo effect5">
+                    <h1 class="app-credit-title">Playlist Cover</h1>
                     <span id="version">Version 1.0</span>
                     <span id="created-date">Created July 8th, 2020</span>
                 </div>
             </div>
-            <h1>Concept</h1>
-            <p>Credit to 0neguy for the original idea.</p>
-            <p>Credit to hiddecollee for ui design.</p>
-            <h1>Elements</h1>
-            <p>uigradients.com for the gradients.</p>
-            <p>animate.style for the animations.</p>
-            <p><a class="credit-link" href="https://www.w3schools.com/howto/howto_css_switch.asp" target="_blank">w3schools.com</a> for the toggle switch.</p>
-            <h1>Copyright</h1>
-            <p>Apple Music © Apple Inc.</p>
-            <p>San Francisco Font © Apple Inc.</p>
+            <div class="detailed-credits animate__animated animate__fadeIn animate__delay-1s">
+                <h1>Concept</h1>
+                <p>Credit to 0neguy for the original <a class="credit-link" href="https://www.reddit.com/r/AppleMusic/comments/hblmv8/i_made_it_easier_for_everybody_to_make_apple_like/" target="_blank">idea</a>.</p>
+                <p>Credit to hiddecollee for <a class="credit-link" href="https://old.reddit.com/r/AppleMusic/comments/hngg7x/i_wish_apple_would_let_us_create_our_own_animated/" target="_blank">ui design</a>.</p>
+                <p><br>This simple webpage was built by <a class="credit-link" href="https://www.twitter.com/frenchfriesRgud" target="_blank">Anthony</a>.</p>
+                <h1>Elements</h1>
+                <p><a class="credit-link" href="https://unsplash.com" target="_blank">unsplash.com</a> for the images.</p>
+                <p><a class="credit-link" href="https://htmlcolorcodes.com/" target="_blank">htmlcolorcodes.com</a> for the colors.</p>
+                <p><a class="credit-link" href="https://uigradients.com" target="_blank">uigradients.com</a> for the gradients.</p>
+                <p><a class="credit-link" href="https://remixicon.com" target="_blank">remixicon.com</a> for the icons.</p>
+                <p><a class="credit-link" href="https://animate.style" target="_blank">animate.style</a> for the animations.</p>
+                <p><a class="credit-link" href="https://www.w3schools.com/howto/howto_css_switch.asp" target="_blank">w3schools.com</a> for the toggle switch.</p>
+                <h1>Photos</h1>
+                <div class="photo-credit-list">
+                    <p class="photo-credit"><span class="photo-id image-001">001</span> - <a class="credit-link" href="https://unsplash.com/@m_gatus" target="_blank">Gatis Marcinkevics</a></p>
+                    <p class="photo-credit"><span class="photo-id image-002">002</span> - <a class="credit-link" href="https://unsplash.com/@m_gatus" target="_blank">Gatis Marcinkevics</a></p>
+                    <p class="photo-credit"><span class="photo-id image-003">003</span> - <a class="credit-link" href="https://unsplash.com/@timmossholder" target="_blank">Tim Mossholder</a></p>
+                    <p class="photo-credit"><span class="photo-id image-004">004</span> - <a class="credit-link" href="https://unsplash.com/@timmossholder" target="_blank">Tim Mossholder</a></p>
+                    <p class="photo-credit"><span class="photo-id image-005">005</span> - <a class="credit-link" href="https://unsplash.com/@timmossholder" target="_blank">Tim Mossholder</a></p>
+                    <p class="photo-credit"><span class="photo-id image-006">006</span> - <a class="credit-link" href="https://unsplash.com/@thehmstravels" target="_blank">Heather Shevlin</a></p>
+                    <p class="photo-credit"><span class="photo-id image-007">007</span> - <a class="credit-link" href="https://unsplash.com/@thehmstravels" target="_blank">Heather Shevlin</a></p>
+                    <p class="photo-credit"><span class="photo-id image-008">008</span> - <a class="credit-link" href="https://unsplash.com/@thehmstravels" target="_blank">Heather Shevlin</a></p>
+                    <p class="photo-credit"><span class="photo-id image-009">009</span> - <a class="credit-link" href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł Czerwiński</a></p>
+                    <p class="photo-credit"><span class="photo-id image-010">010</span> - <a class="credit-link" href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł Czerwiński</a></p>
+                    <p class="photo-credit"><span class="photo-id image-011">011</span> - <a class="credit-link" href="https://unsplash.com/@pawel_czerwinski" target="_blank">Paweł Czerwiński</a></p>
+                    <p class="photo-credit"><span class="photo-id image-012">012</span> - <a class="credit-link" href="https://unsplash.com/@ronaldcuyan" target="_blank">Ronald Cuyan</a></p>
+                    <p class="photo-credit"><span class="photo-id image-013">013</span> - <a class="credit-link" href="https://unsplash.com/@alexradelich" target="_blank">Alex Radelich</a></p>
+                    <p class="photo-credit"><span class="photo-id image-014">014</span> - <a class="credit-link" href="https://unsplash.com/@efekurnaz" target="_blank">Efe Kurnaz</a></p>
+                    <p class="photo-credit"><span class="photo-id image-015">015</span> - <a class="credit-link" href="https://unsplash.com/@bormot" target="_blank">Alexandr Bormotin</a></p>
+                </div>
+                <h1>Copyright</h1>
+                <p>Apple Music © Apple Inc.</p>
+                <hr class="divider">
+                <div class="author-footer">
+                    <span class="author-avi">&#127839;</span>
+                    <span class="frenchfriesRgud">@frenchfriesRgud</span>
+                </div>
+            </div>
         </section>
         
         <script src="/lib/js/playlistCover.js"></script>

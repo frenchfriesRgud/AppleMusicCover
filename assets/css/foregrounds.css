@@ -84,5 +84,105 @@ Colors | Add custom colors here
 ----------------------------------------
 */
 .color-001 {
-    background: red;
+    background-color: #48C9B0;
+}
+.color-002 {
+    background-color: #DC7633;
+}
+.color-003 {
+    background-color: #85C1E9;
+}
+
+.color-004 {
+    background-color: rgb(82, 217, 226);
+}
+.color-005 {
+    background-color: #8E44AD;
+}
+.color-006 {
+    background-color: #7B241C;
+}
+
+.color-007 {
+    background-color: #797D7F;
+}
+.color-008 {
+    background-color: #F5CBA7;
+}
+.color-009 {
+    background-color: #F4F6F6;
+}
+
+.color-010 {
+    background-color: #117A65;
+}
+.color-011 {
+    background-color: #F4D03F;
+}
+.color-012 {
+    background-color:#2E4053;
+}
+
+.color-013 {
+    background-color: #E74C3C;
+}
+.color-014 {
+    background-color: #2E86C1;
+}
+.color-015 {
+    background-color: #D7BDE2;
+}
+/* 
+----------------------------------------
+Images | Add custom colors here
+----------------------------------------
+*/
+.image-001 {
+    background-image: url("https://i.imgur.com/npILbBY.jpg");
+}
+.image-002 {
+    background-image: url("https://i.imgur.com/bJ0lWNS.png");
+}
+.image-003 {
+    background-image: url("https://i.imgur.com/9ofz5sX.png");
+}
+
+.image-004 {
+    background-image: url("https://i.imgur.com/GysPLkY.png");
+}
+.image-005 {
+    background-image: url("https://i.imgur.com/PG92kHt.png");
+}
+.image-006 {
+    background-image: url("https://i.imgur.com/vmQwNFd.png");
+}
+
+.image-007 {
+    background-image: url("https://i.imgur.com/ujUQ06E.png");
+}
+.image-008 {
+    background-image: url("https://i.imgur.com/5Hmpiok.png");
+}
+.image-009 {
+    background-image: url("https://i.imgur.com/qcCyHeV.jpg");
+}
+
+.image-010 {
+    background-image: url("https://i.imgur.com/G3Kabkq.jpg");
+}
+.image-011 {
+    background-image: url("https://i.imgur.com/3xYyYU0.png");
+}
+.image-012 {
+    background-image: url("https://i.imgur.com/5SOfmQW.png");
+}
+
+.image-013 {
+    background-image: url("https://i.imgur.com/d0RtJnm.png");
+}
+.image-014 {
+    background-image: url("https://i.imgur.com/zMINf9p.png");
+}
+.image-015 {
+    background-image: url("https://i.imgur.com/HLMUtg7.png");
 }

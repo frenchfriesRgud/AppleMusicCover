@@ -1,0 +1,22 @@
+{
+  "short_name": "Playlist Cover",
+  "name": "Playlist Cover",
+  "description": "Create Music Playlist Covers",
+  "icons": [
+    {
+      "src": "/assets/app/ios_icon_192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/app/ios_icon_512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "scope":"/",
+  "background_color": "#FFFFFF",
+  "display": "fullscreen",
+  "theme_color": "#FFFFFF"
+}

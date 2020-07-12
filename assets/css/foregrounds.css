@@ -1,5 +1,23 @@
 /* 
 ----------------------------------------
+Custom | JS Adds these here
+----------------------------------------
+*/
+:root {
+    --custom-gradient: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+    --custom-gradient-webkit: -webkit-linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 100%);
+}
+.gradient-custom {
+    background:transparent;
+    background: var(--custom-gradient-webkit);
+    background: var(--custom-gradient);
+}
+.custom {
+    background: url("https://i.imgur.com/Iy5Ahy1.jpg");
+    background-size: cover;
+}
+/* 
+----------------------------------------
 Gradients | Add custom gradients here
 ----------------------------------------
 */

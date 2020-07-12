@@ -3,6 +3,8 @@
 */
 :root {
     --ui-transition:all 0.5s;
+    --am-logo-fill: white;
+    --color-am-red:#ff2d55;
 }
 * {
     /* transition: var(--ui-transition); */
@@ -49,9 +51,26 @@ h2, h3, h4, h5, h6 {
     -ms-user-select: none; 
 }
 .header .action {
-    color: #ff2d55;
+    color: var(--color-am-red);
     font-size: 1.2em;
     transition: var(--ui-transition);
+}
+.header .beta {
+    font-size: 0.5em;
+}
+.beta {
+    vertical-align: middle;
+    padding: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: var(--color-am-red);
+    color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #e6e6e6;
+    text-shadow: none;
+}
+.app-credit-title .beta {
+    font-size: 0.5em;
 }
 .action:hover {
     cursor:pointer;
@@ -99,9 +118,26 @@ h2, h3, h4, h5, h6 {
     cursor: pointer;
     
 }
-.artwork .title {
-    font-family: "SanFranciscoDisplay-Bold", Helvetica, Arial, sans-serif;
+.artwork .title, #playlist-name-text {
+    overflow-wrap: break-word;
+}
+.artwork .title, #playlist-title {
+    font-family: "SanFranciscoDisplay-Heavy", Helvetica, Arial, sans-serif;
     font-size: 1.4em;
+    overflow-wrap: break-word;
+}
+.artwork #playlist-sub-title {
+    font-family: "SanfranciscoText-Regular", Helvetica, Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+    background:transparent;
+    overflow-wrap: break-word;
+}
+.artwork #am-logo {
+    width:30%;
+}
+.artwork #am-logo svg {
+    fill: var(--am-logo-fill);
 }
 .filter {
     display:flex;
@@ -304,6 +340,38 @@ input:checked + .slider:before {
 .foreground-group {
     display:flex;
     width:100%;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.foreground-custom {
+    display:flex;
+    align-items:center;
+}
+.custom-label {
+    margin-left: 20px;
+}
+.custom-label:hover {
+    cursor:pointer;
+}
+.custom-gradient-drawer {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#gradient-direction, #gradient-inverse {
+    font-size: 2em;
+    padding:10px;
+    border-radius:50%;
+    background:#f7f7f7;
+}
+#gradient-direction:hover, #gradient-inverse {
+    cursor:pointer;
+}
+.foreground-palette {
+    display:flex;
+    width:100%;
     justify-content: space-between;
 }
 .foreground-group ul {
@@ -344,12 +412,32 @@ input:checked + .slider:before {
     border:4px solid white!important;
     box-shadow:0px 0px 5px rgb(160, 160, 160);
 }
+/* custom foreground col */
+ul.custom-col {
+    min-height: 0px;
+}
 /* end foregrounds */
 /* end controls */
-
+/* Settings */
+#settings-label {
+    margin-left: auto;
+    margin-right: 10px;
+}
+#settings-toggle-group:hover {
+    cursor: pointer;
+}
+#settings-toggle-group {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    transition: var(--ui-transition);
+}
+#use-settings-radio {
+    font-size: 2em;
+}
+/* end Settings */
 /* footer */
 footer {
-    margin-top:50px;
     text-align:center;
     padding:20px;
 }
@@ -413,12 +501,23 @@ section#credit h1 {
     -ms-user-select: none; 
     justify-content:center;
 }
+.meta img {
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    -webkit-user-drag:none;
+}
 .author-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top:20px;
     padding-bottom:20px;
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    -webkit-user-drag:none;
+    
 }
 span.photo-id {
     padding: 10px;
@@ -445,7 +544,7 @@ p.photo-credit .credit-link {
 }
 /* utilities */
 .hide {
-    display:none;
+    display:none!important;
 }
 .disappear {
     opacity: 0;
@@ -457,6 +556,15 @@ p.photo-credit .credit-link {
 }
 .nofocus {
     opacity: 0.3;
+}
+.margin-align-center {
+    margin: 0 auto;
+}
+.margin-align-right {
+    margin-left: auto;
+}
+.margin-align-left {
+    margin-right:auto;
 }
 .text-shadow {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
@@ -487,7 +595,7 @@ p.photo-credit .credit-link {
     box-shadow: none;
 }
 .display #spacer {
-    padding-right: 0px;
+    /* padding: ; */
 }
 .display .artwork .filter {
     border-radius: 0px;
@@ -500,6 +608,8 @@ p.photo-credit .credit-link {
 .create-info {
     text-align:center;
     padding-top:0px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .create-info .divider {
     width: 90%;

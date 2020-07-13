@@ -1,0 +1,47 @@
+/* artwork display */
+
+.display {
+    background:transparent;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.display .artwork {
+    width: 100%;
+    border-radius:0px;
+    box-shadow: none;
+}
+.display .artwork:hover {
+    box-shadow: none;
+}
+.display #spacer {
+    /* padding: ; */
+}
+.display .artwork .filter {
+    border-radius: 0px;
+}
+.display .artwork .spacer {
+    font-size: 1.4em;
+}
+
+/* screenshot message */
+.create-info {
+    text-align:center;
+    padding-top:0px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.create-info .divider {
+    width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.screenshot-message {
+    margin-top: 20px;
+    color:rgba(0, 0, 0, 0.4);
+}
+.create-info h3 {
+    font-family: 'SanFranciscoText-Light', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}

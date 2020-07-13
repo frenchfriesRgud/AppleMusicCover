@@ -1,0 +1,34 @@
+/* utilities */
+.hide {
+    display:none!important;
+}
+.disappear {
+    opacity: 0;
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    visibility: hidden;
+}
+.nofocus {
+    opacity: 0.3;
+}
+.margin-align-center {
+    margin: 0 auto;
+}
+.margin-align-right {
+    margin-left: auto;
+}
+.margin-align-left {
+    margin-right:auto;
+}
+.text-shadow {
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+.blur-backdrop {
+    -webkit-backdrop-filter: blur(10px);   
+    backdrop-filter: blur(10px);
+}
+.inset-shadow {
+    box-shadow: 0px 0px 100px  rgba(0,0,0,0.5) inset;
+}

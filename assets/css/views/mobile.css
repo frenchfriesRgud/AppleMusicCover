@@ -10,4 +10,11 @@
     section#credit {
         padding:10px;
     }
+    body {
+        min-height: 100vh;
+    }
+    body, html {
+        background: white;
+        background-color: white;
+    }
 }

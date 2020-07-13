@@ -1,0 +1,89 @@
+/* credits page */
+
+section#credit {
+    padding:50px;
+}
+section#credit .handle {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    margin:0 auto;
+}
+section#credit .author-avi {
+    font-size:3em;
+}
+.app-logo {
+    border-radius: 20px;
+    align-self:center;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+}
+.app-credit-title {
+    text-shadow: -2px -2px 5px white;
+    margin-top: 20px!important;
+    font-family: "SanFranciscoDisplay-Heavy", Helvetica, Arial, sans-serif
+}
+#version {
+    padding-bottom:10px;
+}
+section#credit h1 {
+    margin-top:50px;
+}
+.meta {
+    display:flex;
+    flex-direction: column;
+    margin-top:30px;
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    justify-content:center;
+}
+.meta img {
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    -webkit-user-drag:none;
+}
+.author-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom:20px;
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    -webkit-user-drag:none;
+    
+}
+span.photo-id {
+    padding: 10px;
+    background-size: cover;
+    color: rgba(255, 255, 255, 0.397);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.438);
+    border-radius: 5px;
+    display: inline-block;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    pointer-events:none;
+    font-weight: 600;
+}
+p.photo-credit {
+    font-size: 0.8em;
+    user-select:none;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+}
+
+p.photo-credit .credit-link {
+    color: rgb(78, 78, 78)!important;
+}
+/* end credits */

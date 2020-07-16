@@ -32,6 +32,12 @@
     padding-left: 50px;
     padding-right: 50px;
 }
+.display-unsplash-credit-link {
+    margin-top:20px;
+}
+.display-unsplash-credit-link #photographerName {
+    color: var(--color-am-red);
+}
 .create-info .divider {
     width: 90%;
     margin-left: 20px;

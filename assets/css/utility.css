@@ -1,7 +1,13 @@
 /* utilities */
+:root {
+    --flipXY: scaleX(1) scaleY(1);
+}
+/* Remove and deload an element */
 .hide {
     display:none!important;
 }
+
+/* Remove but keep an element and spacing */
 .disappear {
     opacity: 0;
     pointer-events: none;
@@ -10,9 +16,13 @@
     -ms-user-select: none; 
     visibility: hidden;
 }
+
+/* Visually dim an element mainly text */
 .nofocus {
     opacity: 0.3;
 }
+
+/* Alignment */
 .margin-align-center {
     margin: 0 auto;
 }
@@ -22,6 +32,8 @@
 .margin-align-left {
     margin-right:auto;
 }
+
+/* Settings */
 .text-shadow {
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
@@ -31,4 +43,9 @@
 }
 .inset-shadow {
     box-shadow: 0px 0px 100px  rgba(0,0,0,0.5) inset;
+}
+
+/* Flip horizontal */
+.flipXY {
+    transform: var(--flipXY);
 }

@@ -28,7 +28,7 @@ section#credit .author-avi {
 .app-credit-title {
     text-shadow: -2px -2px 5px white;
     margin-top: 20px!important;
-    font-family: "SanFranciscoDisplay-Heavy", Helvetica, Arial, sans-serif
+    font-family: Inter, Helvetica, Arial, sans-serif
 }
 #version {
     padding-bottom:10px;
